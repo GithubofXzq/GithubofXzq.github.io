@@ -54,7 +54,7 @@
 
 
       <ul id="menu">
-        <li><a href="#background">PROBLEM</a></li>
+        <li><a href="index.html">PROBLEM</a></li>
         <li><a href="solu.html">SOLUTION</a></li>
         <li><a href="ourapp.html">OUR APP</a></li>
         <li><a href="demo.html">DEMO</a></li>
@@ -67,24 +67,37 @@
   </section>
 
 
-  <!-- section introduction -->
+  <div class="clear"></div>
+  
+<section class="about-us" id="ourapp">
 
-  <section class="about-us" id="background">
-
-    <h1>BACKGROUND</h1>
+    <h1>OUR APP</h1>
     <hr/>
-    <p>There are numerous apps on the app store now focused on mHealth. They offer a wide variety of tools for people suffering from many different issues. They are most effective when used frequently. The problem arises with app usage adherence and the positive effects of mHealth apps are largely negated as they are used less. If users aren’t using the apps as the designers intend or not at all, they do not receive the same benefits. You can see the vast drop off in the image bellow from, Owen, J., Jaworski, B., Kuhn, E., Makin-Byrd, K., Ramsey, K., & Hoffman, J. (n.d.). MHealth in the Wild: Using Novel Data to Examine the Reach, Use, and Impact of PTSD Coach. JMIR Mental Health., 2(1), E7.by</p>
-    <p style="text-align:center;">
-           <img src="use.png" width="900" height="500">
-      </p>
-
-    <p></p>
+    <p>Our app-GoHealthy works by constantly taking information from the user’s phone. It looks at the data from the accelerometer in both the X, Y, and Z directions. It also checks the screen state to determine whether the phone screen is currently on or off. Finally, it uses the current GPS location of the phone. In the event that the phone GPS is unavailable (such as when someone is underground or in some other non-reachable location), we have a default location programmed into the system. GoHealthy takes all this information and writes it into CSV files with the time stamp on the phone for easy processing once the data has been collected. </p>
+    <hr/>
+     <div class="row">
+        <div class="col-md-6 col-sm-12">
+           <img src="GoHealthy.png" width="320" height="500" background ="rgba(0,0,0)">
+      </div>
+      <div class="col-md-6 col-sm-12 description">
+          <p> To get users' feedback, We built three buttons in GoHealthy: positive, negative and neutral. The user is asked to fill out this one-question survey after the app issues an alert, in order to collect data about which notifications are well-timed. </p>
+      </div>
+    </div>
+    <hr/>
+    <div class="row"> 
+      <div class="col-md-6 col-sm-12 description">
+          <p> With a welled-trained machine learning model, we can calssify good versus bad times for users to use these apps. GoHealthy will lanunch a notification to engage user open their mhealth app when it is the best time analysed by our model</p>
+      </div>
+      <div class="col-md-6 col-sm-12 ">
+          <img src="GoHealthy2.png" width="320" height="500">
+      </div>
+    </div>
+    <p>
+    </p>
 
   </section>
 
-   <div class="clear"></div>
-
- <section class="footer">
+    <section class="footer">
           <br>
           <br>
           <br>
@@ -98,21 +111,18 @@
 
     </section> 
 
- 
- 
-
 
 </div>
 
 
 
-	<!-- Scripts -->
+  <!-- Scripts -->
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <!-- jQuery -->
-	<script src="js/jquery.parallax.js"></script> <!-- jQuery Parallax -->
-	<script src="js/jquery.nicescroll.js"></script> <!-- jQuery NiceScroll -->
-	<script src="js/jquery.sticky.js"></script> <!-- jQuery Stick Menu -->
-	<script src="js/script.js"></script> <!-- All script -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <!-- jQuery -->
+  <script src="js/jquery.parallax.js"></script> <!-- jQuery Parallax -->
+  <script src="js/jquery.nicescroll.js"></script> <!-- jQuery NiceScroll -->
+  <script src="js/jquery.sticky.js"></script> <!-- jQuery Stick Menu -->
+  <script src="js/script.js"></script> <!-- All script -->
 
 </body>
 
