@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PsyberGuide mHealth</title>
+    <title>Machine Learning Final Project</title>
 
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -42,7 +42,7 @@
       <div class="content">
         <div class="text">
 
-          <h1>GoHealthy: Increasing mHealth app usage</h1>
+          <h1>A research on different algorithm perform on sentiment analysis with different size dataset</h1>
           <!-- <p>Scott Renshaw, Dan Thomas, Mike Considine, Ziqin Xu</p> -->
 
   </section>
@@ -54,12 +54,10 @@
 
 
       <ul id="menu">
-        <li><a href="index.html">PROBLEM</a></li>
-        <li><a href="solu.html">SOLUTION</a></li>
-        <li><a href="ourapp.html">OUR APP</a></li>
-        <li><a href="demo.html">DEMO</a></li>
-        <li><a href="res.html">RESULTS</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="index.html">ABSTRACT</a></li>
+        <li><a href="solu.html">RESULT</a></li>
+        <li><a href="demo.html">REPORT</a></li>
+        <li><a href="contact.html">OUR GROUP</a></li>
       </ul>
     </div>
 
@@ -75,17 +73,128 @@
 
     <div class="portfolio-margin">
 
-      <h1>RESULT</h1>
-      <hr/>
-      <p>We found the best results when looking at the features mean, variance, and range when using boxcar and sliding window with K nearest neighbor. As you can see in the ROC curve bellow we acheived best results for good (class 2) and bad (class 0) times. Since our goal was to focus on classifying good versus bad times if we ignore the results for netural times we get the following ocnfusion matrix. As you can see it acheived fairly good results. Having precision values of 0.9615 and 0.8218 for class 0 and 2 respectively, recall values of 0.4717 and 0.9923 for class 0 and 2 respectively, and F1-Scores of 0.6329 and 0.8991 for class 0 and 2 respectively.</p>
+     <h1>RESULTs</h1>
+    <hr/>
+    <div>
+    <h3>Logistic Regression<h3>
+    <p>In the Logistic Regression, we first randomly chose 500 positive samples and 500 negative samples as testing set.</p>
+    <hr/>
+    </div>
 
-   </div>
-   <div class="col-md-6 col-sm-12 ">
-          <img src="roc.png" width="320" height="320">
+    <div class="row">
+    <div class="col-md-6 col-sm-12">
+          <div class="about-des">
+            <img src="figures/WechatIMG976.png" width="420" height="320">
+          </div>
+        </div>
+      <div class="col-md-6 col-sm-12">
+          <div class="about-des">
+            <img src="figures/WechatIMG975.png" width="420" height="320">
+          </div>
+        </div>
+      <div class="col-md-6 col-sm-12">
+          <div class="about-des">
+            <img src="figures/WechatIMG974.png" width="420" height="320">
+          </div>
+        </div>
+      <div class="col-md-6 col-sm-12">
+          <div class="about-des">
+            <img src="figures/WechatIMG977.png" width="420" height="320">
+          </div>
+        </div>
+      <div class="col-md-6 col-sm-12">
+          <div class="about-des">
+            <img src="figures/WechatIMG978.png" width="420" height="320">
+          </div>
+        </div>
     </div>
-    <div class="col-md-6 col-sm-12 ">
-          <img src="matrix.png" width="320" height="320">
+
+    <hr/>
+    <div>
+    <h3>Decision Tree<h3>
+    <p>Because we didn't use pruning strategy to this, there is a apparent overfittig in trainnign model</p>
+    <hr/>
+    <div class="col-md-6 col-sm-12">
+          <div class="about-des">
+            <img src="figures/Screen Shot 2018-06-10 at 8.03.59 PM.png" width="420" height="320">
+          </div>
+        </div>
+    <div class="col-md-6 col-sm-12">
+          <div class="about-des">
+            <img src="figures/Screen Shot 2018-06-05 at 4.38.08 PM.png" width="420" height="320">
+          </div>
+        </div>
     </div>
+
+    <hr/>
+    <div>
+    <h3>Nearest Neighbor<h3>
+    <p>A probable reason for this performance is that in 1-NN, each training data sample is the nearest neighbor for itself, but when K is greater than 1, each training data sample should consider others.</p>
+    <hr/>
+    <div class="col-md-6 col-sm-12">
+          <div class="about-des">
+            <img src="figures/Screen Shot 2018-06-05 at 4.38.23 PM.png" width="420" height="320">
+          </div>
+        </div>
+    <div class="col-md-6 col-sm-12">
+          <div class="about-des">
+            <img src="figures/Screen Shot 2018-06-05 at 4.38.32 PM.png" width="420" height="320">
+          </div>
+        </div>
+    </div>
+
+  <hr/>
+    <div>
+    <h3>LSTM<h3>
+    <p>Precision and Recall not good as we want but test accuracy is acceptable. With larger dataset input result should be better</p>
+    <hr/>
+    <div class="col-md-6 col-sm-12">
+          <div class="about-des">
+            <img src="figures/Screen Shot 2018-06-10 at 3.24.04 PM.png" width="420" height="320">
+          </div>
+        </div>
+    <div class="col-md-6 col-sm-12">
+          <div class="about-des">
+            <img src="figures/Screen Shot 2018-06-10 at 3.24.17 PM.png" width="420" height="320">
+          </div>
+        </div>
+    </div>
+
+  <hr/>
+    <div>
+    <h3>Naive Bayes<h3>
+    <p>Their performance is irrelevant to the size of training set. Their precision and recall value stay at a constant value for whatever size of the training set.</p>
+    <hr/>
+    <div class="col-md-6 col-sm-12">
+          <div class="about-des">
+            <img src="figures/WechatIMG222.png" width="420" height="320">
+          </div>
+        </div>
+    <div class="col-md-6 col-sm-12">
+          <div class="about-des">
+            <img src="figures/WechatIMG223.png" width="420" height="320">
+          </div>
+        </div>
+    </div>
+
+  <hr/>
+    <div>
+    <h3>Support Vector Machine<h3>
+    <p>This shown Support Vector Machine classifier is not very effective when handling a very sparse vector</p>
+    <hr/>
+    <div class="col-md-6 col-sm-12">
+          <div class="about-des">
+            <img src="figures/WechatIMG220.png" width="420" height="320">
+          </div>
+        </div>
+    <div class="col-md-6 col-sm-12">
+          <div class="about-des">
+            <img src="figures/WechatIMG221.png" width="420" height="320">
+          </div>
+        </div>
+    </div>
+
+  </div>
 
    </section>
 
