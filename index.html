@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PsyberGuide mHealth</title>
+    <title>Machine Learning Final Project</title>
 
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -42,7 +42,7 @@
       <div class="content">
         <div class="text">
 
-          <h1>GoHealthy: Increasing mHealth app usage</h1>
+          <h1>A research on different algorithm perform on sentiment analysis with different size dataset</h1>
           <!-- <p>Scott Renshaw, Dan Thomas, Mike Considine, Ziqin Xu</p> -->
 
   </section>
@@ -54,12 +54,12 @@
 
 
       <ul id="menu">
-        <li><a href="#background">PROBLEM</a></li>
-        <li><a href="solu.html">SOLUTION</a></li>
-        <li><a href="ourapp.html">OUR APP</a></li>
-        <li><a href="demo.html">DEMO</a></li>
-        <li><a href="res.html">RESULTS</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="#background">ABSTRACT</a></li>
+        <li><a href="solu.html">RESULT</a></li>
+        <li><a href="ourapp.html">Support Vector Machine</a></li>
+        <li><a href="demo.html">Decision Tree</a></li>
+        <li><a href="res.html">Nearest Neighbor</a></li>
+        <li><a href="contact.html">LSTM</a></li>
       </ul>
     </div>
 
@@ -71,11 +71,38 @@
 
   <section class="about-us" id="background">
 
-    <h1>BACKGROUND</h1>
+    <h1>ABSTRACT</h1>
     <hr/>
-    <p>There are numerous apps on the app store now focused on mHealth. They offer a wide variety of tools for people suffering from many different issues. They are most effective when used frequently. The problem arises with app usage adherence and the positive effects of mHealth apps are largely negated as they are used less. If users aren’t using the apps as the designers intend or not at all, they do not receive the same benefits. You can see the vast drop off in the image bellow from, Owen, J., Jaworski, B., Kuhn, E., Makin-Byrd, K., Ramsey, K., & Hoffman, J. (n.d.). MHealth in the Wild: Using Novel Data to Examine the Reach, Use, and Impact of PTSD Coach. JMIR Mental Health., 2(1), E7.by</p>
+    <div>
+    <h3>Our task <h3>
+    <hr/>
+    <p>Our task is to predict the sentiment (positive or negative) in a tweet text based on the text itself using several different algorithms, and finally compare the result and accuracy among these different algorithms. In this project, we analyzed the sentiment distribution and tried to recognize the sentiment features from test based on tweet sentiment analysis dataset. We plan to adapt different ML algorithms and visualize their performance under different conditions.</p>
+    <hr/>
+    </div>
+    <div>
+    <h3>Why is the task important<h3>
+    <hr/>
+    <p>Because sentiment analysis is useful in social media, like determining market strategy, improving customer service, testing business KPIs and so on. Also it is convenient to get the related datasets on Github, Kaggle or Twitter.</p>
+    <hr/>
+    </div>
+    <div>
+    <h3>Learners we use<h3>
+    <hr/>
+    <p>Logistic Regression, Support Vector Machine, Decision Tree, Nearest Neighbor, LSTM and Naive Bayes. The strategy we used to convert text into high-dimensional vector is called bag of word method, so the features are words in the word vector. To find a best representation of tweet text, we tried different dimensions of word vectors.</p>
+    <hr/>
+    </div>
+    <div>
+    <h3>Key results<h3>
+    <hr/>
+    <p>1. The effect of different bag of word
+    Generally, the accuracy of using a 1000-dimensional bag of word is higher than that of 2000-dimensional bag of word, because 2000-D increases the noise.
+       2. The effect of different learners 
+    LSTM has the highest accuracy (about 75%), while Naive Bayes has the lowest accuray (about 66.5%).
+    </p>
+    <hr/>
+    </div>
     <p style="text-align:center;">
-           <img src="use.png" width="900" height="500">
+
       </p>
 
     <p></p>

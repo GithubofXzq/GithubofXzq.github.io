@@ -42,8 +42,10 @@ h1{
 
 h3{
   font-size: 24px;
-  color: white;
-  margin-top: 10px
+  color: black;
+  font-weight:italic;
+  margin-top: 10px;
+  text-align:center;
 }
 
 p{
@@ -91,7 +93,7 @@ img {
   position:relative;
   width:100%;
   height:580px;
-  background:url(../MHealth-App-page.jpg) fixed no-repeat;
+  background:url(../figures/imgonline-com-ua-twotoone-3vR58rFeM7ug1CSx.jpg) fixed no-repeat;
   background-size: cover;
 }
 
